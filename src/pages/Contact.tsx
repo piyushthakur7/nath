@@ -1,6 +1,6 @@
 import React from 'react';
-import { Phone, Mail, MapPin, MessageCircle, ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 
 export default function Contact() {
   return (

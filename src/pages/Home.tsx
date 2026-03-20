@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { Globe, ChevronRight, Truck, Award, ShieldCheck } from 'lucide-react';
+import { ChevronRight, ShieldCheck, Truck, Award } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -118,7 +118,7 @@ export default function Home() {
                 className="glass-card p-12 rounded-[2.5rem] flex flex-col items-center text-center group"
               >
                 <span className="label-micro mb-6 group-hover:text-ink">{stat.label}</span>
-                <span className={`text-6xl font-serif mb-2 bg-clip-text text-transparent bg-gradient-to-br from-${stat.color} to-paper`}>{stat.value}</span>
+                <span className={`text-6xl font-serif mb-2 bg-clip-text text-transparent bg-gradient-to-br from-emerald to-accent`}>{stat.value}</span>
                 <span className="text-xs uppercase tracking-widest opacity-40 font-bold font-mono">{stat.sub}</span>
               </motion.div>
             ))}
@@ -172,7 +172,7 @@ export default function Home() {
                   }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-10 group cursor-pointer">
-                    <div className={`w-16 h-16 rounded-3xl border border-line flex items-center justify-center shrink-0 text-${item.color} group-hover:bg-${item.color} group-hover:text-paper transition-all duration-500 glass-card`}>
+                    <div className={`w-16 h-16 rounded-3xl border border-line flex items-center justify-center shrink-0 text-emerald group-hover:bg-emerald group-hover:text-paper transition-all duration-500 glass-card`}>
                       {item.icon}
                     </div>
                     <div>

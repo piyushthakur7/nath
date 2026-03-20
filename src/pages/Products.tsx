@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, ArrowRight, ChevronRight } from 'lucide-react';
+import { ChevronRight, X } from 'lucide-react';
 import { PRODUCTS, Product } from '../constants';
 import { cn } from '../lib/utils';
 

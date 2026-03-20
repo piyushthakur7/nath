@@ -6,25 +6,12 @@ import {
   X, 
   MessageCircle
 } from 'lucide-react';
-import { generateLogo } from '../services/logoService';
 import { cn } from '../lib/utils';
 
 export default function Layout() {
-  const [logo, setLogo] = useState<string | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    const fetchLogo = async () => {
-      try {
-        const generatedLogo = await generateLogo();
-        setLogo(generatedLogo);
-      } catch (error) {
-        console.error("Failed to generate logo:", error);
-      }
-    };
-    fetchLogo();
-  }, []);
+  const logo = "/logo.png";
 
   const whatsappLink = `https://wa.me/919714485318`;
 
@@ -49,11 +36,9 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto">
           <div className="glass-card rounded-3xl h-24 flex justify-between items-center px-8 shadow-2xl">
             <Link to="/" className="flex items-center gap-4 group">
-              {logo ? (
-                <img src={logo} alt="Nath Group Logo" className="h-14 w-14 object-contain brightness-[1.2] group-hover:scale-110 transition-all duration-500" referrerPolicy="no-referrer" />
-              ) : (
-                <div className="h-12 w-12 bg-accent flex items-center justify-center text-paper font-serif italic text-2xl rounded-xl">N</div>
-              )}
+              <div className="h-14 w-14 bg-white/5 p-1 rounded-xl shadow-inner group-hover:bg-white/10 transition-colors duration-500 overflow-hidden border border-white/5">
+                <img src={logo} alt="Nath Group Logo" className="h-full w-full object-contain brightness-[1.1] scale-[1.15] group-hover:scale-125 transition-all duration-700" />
+              </div>
               <div className="flex flex-col">
                 <span className="text-2xl font-serif font-medium tracking-tight leading-none premium-gradient-text uppercase">Nath Group</span>
                 <span className="label-micro mt-1 opacity-60">Minerals & Mining</span>
@@ -149,7 +134,9 @@ export default function Layout() {
           <div className="grid md:grid-cols-4 gap-24 mb-32">
             <div className="col-span-2">
               <div className="flex items-center gap-5 mb-10">
-                <div className="h-14 w-14 bg-gradient-to-br from-emerald to-accent flex items-center justify-center text-paper font-serif italic text-2xl rounded-2xl shadow-xl">N</div>
+                <div className="h-16 w-16 bg-white/5 p-1 rounded-2xl shadow-inner overflow-hidden border border-white/5">
+                  <img src={logo} alt="Nath Group Logo" className="h-full w-full object-contain brightness-[1.1]" />
+                </div>
                 <div className="flex flex-col">
                   <span className="text-3xl font-serif font-medium tracking-tight premium-gradient-text uppercase">Nath Group</span>
                   <span className="label-micro mt-1 opacity-60">Minerals & Mining</span>

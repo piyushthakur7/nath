@@ -5,173 +5,179 @@ import { Globe, ChevronRight, Truck, Award, ShieldCheck } from 'lucide-react';
 
 export default function Home() {
   return (
-    <>
+    <div className="relative pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden border-b border-line pt-20">
+      <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* Background Large Text */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.03] select-none overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.05] select-none overflow-hidden">
           <motion.h1 
-            initial={{ x: -100 }}
-            animate={{ x: 100 }}
-            transition={{ duration: 20, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
-            className="text-[40vw] font-serif whitespace-nowrap leading-none"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1.2, opacity: 0.05 }}
+            transition={{ duration: 3, ease: "easeOut" }}
+            className="text-[40vw] font-serif whitespace-nowrap leading-none premium-gradient-text"
           >
-            MINERALS MINERALS MINERALS
+            NATH NATH NATH
           </motion.h1>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10">
-          <div className="grid lg:grid-cols-12 gap-12 items-center">
+          <div className="grid lg:grid-cols-12 gap-24 items-center">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-              className="lg:col-span-7"
+              transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+              className="lg:col-span-8"
             >
-              <div className="label-micro mb-8 flex items-center gap-3">
-                <span className="w-8 h-[1px] bg-accent"></span>
-                Pioneering the Mineral Industry Since 2008
+              <div className="label-micro mb-10 flex items-center gap-5">
+                <span className="w-12 h-[2px] bg-gradient-to-r from-emerald to-accent"></span>
+                <span className="premium-gradient-text">Since 2008 • Global Mineral Excellence</span>
               </div>
-              <h1 className="text-7xl md:text-[10rem] font-serif leading-[0.8] tracking-tighter mb-12">
-                Earth's <br />
-                <span className="italic text-accent">Purest</span> <br />
-                Essence.
+              <h1 className="text-8xl md:text-[14rem] font-serif leading-[0.75] tracking-tighter mb-16 relative">
+                Premium <br />
+                <span className="italic text-accent drop-shadow-[0_0_50px_rgba(234,179,8,0.3)]">Minerals</span> <br />
+                Refined.
+                <div className="absolute -top-12 -left-12 w-48 h-48 bg-emerald/10 blur-[80px] -z-10" />
               </h1>
-              <div className="flex flex-col md:flex-row md:items-end gap-12">
-                <p className="text-xl md:text-2xl font-serif italic text-ink/60 max-w-md leading-relaxed">
-                  Nath Group of Minerals: Where traditional mining wisdom meets cutting-edge industrial precision.
+              <div className="flex flex-col md:flex-row md:items-end gap-16">
+                <p className="text-2xl font-serif italic text-ink/70 max-w-lg leading-relaxed border-l-2 border-accent pl-10 py-4 bg-glass/20 backdrop-blur-sm rounded-r-3xl">
+                  Nath Group: Bridging nature's raw power with high-end industrial engineering.
                 </p>
                 <Link 
                   to="/products"
-                  className="group flex items-center gap-4 text-sm font-bold uppercase tracking-[0.2em] shrink-0"
+                  className="group flex items-center gap-6 text-sm font-bold uppercase tracking-[0.3em] shrink-0"
                 >
-                  <div className="w-20 h-20 rounded-full border border-line flex items-center justify-center group-hover:bg-accent group-hover:text-paper group-hover:border-accent transition-all duration-700">
-                    <ChevronRight size={32} />
+                  <div className="w-24 h-24 rounded-full border-2 border-line flex items-center justify-center group-hover:bg-accent group-hover:text-paper group-hover:border-accent group-hover:scale-110 transition-all duration-700 shadow-2xl overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-br from-emerald to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    <ChevronRight size={40} className="relative z-10" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-[10px] opacity-40 mb-1">Explore Our</span>
-                    <span>Product Catalog</span>
+                    <span className="text-[10px] opacity-40 mb-1 font-mono">Curated</span>
+                    <span className="premium-gradient-text">Catalog</span>
                   </div>
                 </Link>
               </div>
             </motion.div>
             
             <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="lg:col-span-5 relative"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 2, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="lg:col-span-4 relative group"
             >
-              <div className="aspect-[4/5] overflow-hidden border border-line p-4 bg-paper relative z-10">
+              <div className="aspect-[3/4] overflow-hidden rounded-[3rem] border border-line p-5 bg-glass relative z-10 hover-glow">
                 <img 
-                  src="https://picsum.photos/seed/mineral-raw/1000/1250" 
+                  src="https://picsum.photos/seed/mineral-raw-luxe/1000/1250" 
                   alt="Raw Mineral" 
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                  className="w-full h-full object-cover rounded-[2rem] brightness-[1.1] transition-all duration-1000 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />
               </div>
-              {/* Decorative Frame */}
-              <div className="absolute -top-8 -right-8 w-full h-full border border-accent/20 -z-10"></div>
+              {/* Decorative Floating Elements */}
+              <div className="absolute -top-10 -right-10 w-40 h-40 border border-emerald/20 rounded-full animate-pulse" />
+              <div className="absolute -bottom-10 -left-10 w-60 h-60 border border-accent/20 rounded-full animate-[spin_10s_linear_infinite]" />
               
-              {/* Floating Badge */}
+              {/* Floating Glass Badge */}
               <motion.div 
-                animate={{ y: [0, -20, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-12 -left-12 bg-ink text-paper p-8 border border-line hidden xl:block z-20"
+                animate={{ y: [0, -30, 0] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -bottom-16 -left-16 glass-card p-10 rounded-[2rem] hidden xl:block z-20 shadow-2xl"
               >
-                <div className="label-micro text-accent mb-2">Global Export</div>
-                <div className="text-3xl font-serif italic">25+ Countries</div>
+                <div className="label-micro text-accent mb-3">Global Export</div>
+                <div className="text-4xl font-serif italic premium-gradient-text">25+ Nations</div>
               </motion.div>
             </motion.div>
           </div>
         </div>
         
         {/* Scroll Indicator */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
-          <div className="label-micro opacity-40 rotate-90 origin-center translate-y-8">Scroll</div>
-          <div className="w-[1px] h-24 bg-line relative overflow-hidden">
+        <div className="absolute bottom-16 right-16 flex flex-col items-center gap-6 translate-x-1/2">
+          <div className="label-micro opacity-40 rotate-90 origin-center translate-y-12">Explore</div>
+          <div className="w-[2px] h-32 bg-line/20 relative overflow-hidden rounded-full">
             <motion.div 
-              animate={{ y: [-100, 100] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-              className="absolute top-0 left-0 w-full h-1/2 bg-accent"
+              animate={{ y: [-128, 128] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-emerald to-accent"
             />
-          </div>
-        </div>
-
-        {/* Vertical Rail Text */}
-        <div className="absolute right-12 top-1/2 -translate-y-1/2 hidden xl:block">
-          <div className="label-micro rotate-90 origin-right whitespace-nowrap opacity-20">
-            NATURAL RESOURCES • INDUSTRIAL PRECISION • GLOBAL LOGISTICS
           </div>
         </div>
       </section>
 
-      {/* Stats Section - Visible Grid Style */}
-      <section className="border-b border-line">
+      {/* Stats Section with Glass Cards */}
+      <section className="py-32 relative">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 border-x border-line">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { label: 'Global Reach', value: '25+', sub: 'Countries' },
-              { label: 'Mining Assets', value: '30+', sub: 'Active Mines' },
-              { label: 'Experience', value: '15+', sub: 'Years' },
-              { label: 'Production', value: '500k', sub: 'Tons/Year' },
+              { label: 'Global Network', value: '25+', sub: 'Countries', color: 'emerald' },
+              { label: 'Mining Assets', value: '30+', sub: 'Active Mines', color: 'accent' },
+              { label: 'Deep Expertise', value: '15+', sub: 'Years', color: 'copper' },
+              { label: 'Volume', value: '500k', sub: 'Tons/Year', color: 'emerald' },
             ].map((stat, i) => (
-              <div key={i} className="p-12 border-r border-line last:border-r-0 flex flex-col items-center text-center group hover:bg-ink hover:text-paper transition-colors duration-500">
-                <span className="label-micro mb-4 group-hover:text-accent">{stat.label}</span>
-                <span className="text-5xl font-serif mb-1">{stat.value}</span>
-                <span className="text-xs uppercase tracking-widest opacity-40">{stat.sub}</span>
-              </div>
+              <motion.div 
+                key={i}
+                whileHover={{ y: -10 }}
+                className="glass-card p-12 rounded-[2.5rem] flex flex-col items-center text-center group"
+              >
+                <span className="label-micro mb-6 group-hover:text-ink">{stat.label}</span>
+                <span className={`text-6xl font-serif mb-2 bg-clip-text text-transparent bg-gradient-to-br from-${stat.color} to-paper`}>{stat.value}</span>
+                <span className="text-xs uppercase tracking-widest opacity-40 font-bold font-mono">{stat.sub}</span>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Features - Split Layout */}
-      <section className="py-32">
+      {/* Features - High Contrast Layout */}
+      <section className="py-48 relative overflow-hidden">
+        {/* Decorative background circle */}
+        <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-emerald/5 rounded-full blur-[150px]" />
+        
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-24 items-center">
-            <div className="relative">
-              <div className="aspect-square overflow-hidden border border-line p-4">
+          <div className="grid lg:grid-cols-2 gap-32 items-center">
+            <div className="relative group">
+              <div className="aspect-square overflow-hidden rounded-[4rem] border border-line p-6 bg-glass relative z-10 hover-glow transition-all duration-700">
                 <img 
-                  src="https://picsum.photos/seed/industrial/1000/1000" 
+                  src="https://picsum.photos/seed/industrial-premium/1000/1000" 
                   alt="Industrial Operations" 
-                  className="w-full h-full object-cover grayscale"
+                  className="w-full h-full object-cover rounded-[3rem] grayscale hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-accent/10 backdrop-blur-xl border border-line p-8 hidden md:block">
-                <ShieldCheck size={40} className="text-accent mb-6" />
-                <h4 className="text-xl font-serif mb-2">Certified Excellence</h4>
-                <p className="text-sm text-ink/60 leading-relaxed">ISO 9001:2015 certified processes ensuring consistent quality.</p>
+              <div className="absolute -bottom-16 -right-16 w-80 h-80 glass-card rounded-[3.5rem] p-12 hidden md:block z-20 shadow-2xl border-emerald/20">
+                <ShieldCheck size={56} className="text-emerald mb-8" />
+                <h4 className="text-2xl font-serif mb-3 italic">Certified Purity</h4>
+                <p className="text-sm text-ink/50 leading-relaxed">ISO 9001:2015 certified processes ensuring consistent world-class quality.</p>
               </div>
             </div>
             
-            <div>
-              <h2 className="text-5xl md:text-6xl mb-12 leading-tight">
-                Crafting the <br />
-                <span className="italic">Foundation</span> of <br />
-                Modern Industry.
+            <div className="relative">
+              <div className="label-micro mb-12">Industrial Precision</div>
+              <h2 className="text-7xl md:text-8xl mb-16 leading-tight font-serif tracking-tighter">
+                Defining the <br />
+                <span className="italic premium-gradient-text drop-shadow-sm">Modern</span> <br />
+                Infrastructure.
               </h2>
-              <div className="space-y-12">
+              <div className="space-y-16">
                 {[
                   {
-                    icon: <Truck size={24} />,
-                    title: "Seamless Logistics",
-                    desc: "Our integrated supply chain ensures that our minerals reach your facility with zero compromise on schedule or quality."
+                    icon: <Truck size={28} />,
+                    title: "Advanced Logistics",
+                    color: "emerald",
+                    desc: "Our high-precision supply chain ensures our minerals reach your global facility with zero latency and maximum throughput."
                   },
                   {
-                    icon: <Award size={24} />,
-                    title: "Bespoke Processing",
-                    desc: "We offer customized mineral processing to meet the specific chemical and physical requirements of your industry."
+                    icon: <Award size={28} />,
+                    title: "Custom Refining",
+                    color: "accent",
+                    desc: "We engineer bespoke mineral solutions tailored to the atomic precise requirements of your specific industrial vertical."
                   }
                 ].map((item, i) => (
-                  <div key={i} className="flex gap-8">
-                    <div className="w-12 h-12 rounded-full border border-line flex items-center justify-center shrink-0 text-accent">
+                  <div key={i} className="flex gap-10 group cursor-pointer">
+                    <div className={`w-16 h-16 rounded-3xl border border-line flex items-center justify-center shrink-0 text-${item.color} group-hover:bg-${item.color} group-hover:text-paper transition-all duration-500 glass-card`}>
                       {item.icon}
                     </div>
                     <div>
-                      <h3 className="text-xl font-serif mb-3">{item.title}</h3>
-                      <p className="text-ink/60 leading-relaxed">{item.desc}</p>
+                      <h3 className="text-2xl font-serif mb-4 italic group-hover:text-accent transition-colors">{item.title}</h3>
+                      <p className="text-ink/50 leading-relaxed text-lg max-w-md">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -180,6 +186,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

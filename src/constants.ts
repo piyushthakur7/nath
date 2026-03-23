@@ -13,7 +13,7 @@ export const PRODUCTS: Product[] = [
     id: "china-clay",
     name: "China Clay (Premium Kaolin)",
     description: "High-whiteness Kaolin processed via a specialized wet-process technique. Features exceptional particle fineness and chemical purity, optimized for high-end ceramics and coatings.",
-    image: "/china_clay_mineral_1773999664528.png",
+    image: "/china_clay_real.png",
     category: "Clay",
     specs: [
       { label: "Alumina (Al2O3)", value: "37.19%" },
@@ -29,7 +29,7 @@ export const PRODUCTS: Product[] = [
     id: "un-41",
     name: "UN-41 (MIX-82 Premium)",
     description: "Advanced industrial mineral blend with superior whiteness (68.41) and high Alumina content. Engineered for optimal firing stability and surface finish in industrial ceramics.",
-    image: "/industrial_mineral_un41_1773999719239.png",
+    image: "/un41_real.png",
     category: "Minerals",
     specs: [
       { label: "Alumina (Al2O3)", value: "32.81%" },
@@ -61,7 +61,7 @@ export const PRODUCTS: Product[] = [
     id: "kaolin-clay",
     name: "Kaolin Clay (Standard)",
     description: "Pure Kaolin clay with balanced alumina and silica content, providing excellent plasticity and firing characteristics for ceramic art and industry.",
-    image: "/kaolin_clay_mineral_1773999828715.png",
+    image: "/kaolin_clay_real.png",
     category: "Clay",
     specs: [
       { label: "Alumina (Al2O3)", value: "36-39%" },
@@ -75,7 +75,7 @@ export const PRODUCTS: Product[] = [
     id: "ball-clay",
     name: "Ball Clay (Industrial)",
     description: "Extremely plastic ball clay with high dry and fired strength. Exceptional bonding index (MOR 372.5) and high plasticity (41.2%), essential for large ceramic bodies.",
-    image: "/ball_clay_mineral_1773999682050.png",
+    image: "/ball_clay_real.png",
     category: "Clay",
     specs: [
       { label: "Alumina (Al2O3)", value: "31.94%" },
@@ -91,7 +91,7 @@ export const PRODUCTS: Product[] = [
     id: "mix-82-sr",
     name: "MIX-82 Silica-Rich",
     description: "Specialized high-silica blend (63.42%) with moderate alumina. Ideal for glazes and specific ceramic formulations requiring high silica-alumina ratios.",
-    image: "/sb1_clay_mineral_1773999756254.png",
+    image: "/sbq_clay_real.png",
     category: "Minerals",
     specs: [
       { label: "Silica (SiO2)", value: "63.42%" },
@@ -107,7 +107,7 @@ export const PRODUCTS: Product[] = [
     id: "white-clay",
     name: "White Clay",
     description: "Super-white processed clay for demanding applications in the paper and cosmetic industries where color purity is paramount.",
-    image: "/white_clay_mineral_1773999702245.png",
+    image: "/white_clay_real.png",
     category: "Clay",
     specs: [
       { label: "Whiteness Index", value: "94+" },

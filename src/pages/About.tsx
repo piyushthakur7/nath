@@ -29,18 +29,16 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 mb-24 md:mb-48">
           <div className="aspect-[16/9] overflow-hidden rounded-[2.5rem] md:rounded-[3.5rem] border border-line bg-glass p-3 md:p-5 hover-glow group transition-all duration-700">
             <img 
-              src="https://picsum.photos/seed/mine-luxe/1200/800" 
+              src="/images/enterprise/op-4.jpg" 
               alt="Mining Site" 
               className="w-full h-full object-cover rounded-[1.5rem] md:rounded-[2.5rem] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
-              referrerPolicy="no-referrer"
             />
           </div>
           <div className="aspect-[16/9] overflow-hidden rounded-[2.5rem] md:rounded-[3.5rem] border border-line bg-glass p-3 md:p-5 hover-glow group transition-all duration-700 md:mt-32">
             <img 
-              src="https://picsum.photos/seed/lab-luxe/1200/800" 
-              alt="Laboratory" 
+              src="/images/enterprise/min-2.jpg" 
+              alt="Mineral Processing" 
               className="w-full h-full object-cover rounded-[1.5rem] md:rounded-[2.5rem] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
-              referrerPolicy="no-referrer"
             />
           </div>
         </div>

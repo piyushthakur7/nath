@@ -26,10 +26,11 @@ export default function Contact() {
                   </div>
                   <h3 className="text-2xl md:text-3xl font-serif italic">Headquarters</h3>
                 </div>
-                <p className="text-lg md:text-xl text-ink/50 leading-relaxed font-serif italic">
+                <p className="text-lg md:text-xl text-body leading-relaxed font-serif italic">
                   Nath Group of Minerals,<br />
-                  NH-15, Barmer Road,<br />
-                  Barmer, Rajasthan - 344001, India
+                  Square Meter - 1347, Plot No. 1 and 2,<br />
+                  Survey NO 547 Paiki, Pipali Jetpar Road,<br />
+                  Village - Bela, Morbi, Gujarat - 363330
                 </p>
               </div>
 
@@ -40,14 +41,20 @@ export default function Contact() {
                   </div>
                   <h3 className="text-2xl md:text-3xl font-serif italic">Direct Reach</h3>
                 </div>
-                <div className="space-y-4 md:space-y-6 text-lg md:text-xl text-ink/50 font-serif italic">
-                  <p className="flex justify-between border-b border-line pb-3 md:pb-4">
-                    <span>Operations:</span>
-                    <span className="text-ink">+91 97144 85318</span>
-                  </p>
+                <div className="space-y-4 md:space-y-6 text-lg md:text-xl text-body font-serif italic">
+                  <div className="flex flex-col border-b border-line pb-3 md:pb-4 gap-2">
+                    <div className="flex justify-between">
+                      <span>Operations:</span>
+                      <span className="text-ink">+91 97144 85318</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Secondary:</span>
+                      <span className="text-ink">+91 98796 04449</span>
+                    </div>
+                  </div>
                   <p className="flex justify-between">
                     <span>Email:</span>
-                    <span className="text-ink">info@nathminerals.com</span>
+                    <span className="text-ink">nathenterprise11@gmail.com</span>
                   </p>
                 </div>
               </div>

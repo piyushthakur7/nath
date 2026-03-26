@@ -36,12 +36,12 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto">
           <div className="glass-card rounded-3xl h-24 flex justify-between items-center px-8 shadow-2xl">
             <Link to="/" className="flex items-center gap-4 group">
-              <div className="h-14 w-14 bg-white/5 p-1 rounded-xl shadow-inner group-hover:bg-white/10 transition-colors duration-500 overflow-hidden border border-white/5">
-                <img src={logo} alt="Nath Group Logo" className="h-full w-full object-contain brightness-[1.1] scale-[1.15] group-hover:scale-125 transition-all duration-700" />
+              <div className="h-14 w-14 bg-ink/5 p-1 rounded-xl shadow-inner group-hover:bg-ink/10 transition-colors duration-500 overflow-hidden border border-ink/5">
+                <img src={logo} alt="Nath Group Logo" className="h-full w-full object-contain brightness-[1.0] scale-[1.15] group-hover:scale-125 transition-all duration-700" />
               </div>
               <div className="flex flex-col">
                 <span className="text-2xl font-serif font-medium tracking-tight leading-none premium-gradient-text uppercase">Nath Group</span>
-                <span className="label-micro mt-1 opacity-60">Minerals & Mining</span>
+                <span className="label-micro mt-1 opacity-80">Minerals & Mining</span>
               </div>
             </Link>
 
@@ -53,7 +53,7 @@ export default function Layout() {
                   to={item.path}
                   className={cn(
                     "text-[11px] font-bold uppercase tracking-[0.2em] transition-all hover:text-accent relative group/item",
-                    location.pathname === item.path ? "text-accent" : "text-ink/60"
+                    location.pathname === item.path ? "text-accent" : "text-ink/80"
                   )}
                 >
                   {item.name}
@@ -134,12 +134,12 @@ export default function Layout() {
           <div className="grid md:grid-cols-4 gap-24 mb-32">
             <div className="col-span-2">
               <div className="flex items-center gap-5 mb-10">
-                <div className="h-16 w-16 bg-white/5 p-1 rounded-2xl shadow-inner overflow-hidden border border-white/5">
-                  <img src={logo} alt="Nath Group Logo" className="h-full w-full object-contain brightness-[1.1]" />
+                <div className="h-16 w-16 bg-ink/5 p-1 rounded-2xl shadow-inner overflow-hidden border border-ink/5">
+                  <img src={logo} alt="Nath Group Logo" className="h-full w-full object-contain brightness-[1.0]" />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-3xl font-serif font-medium tracking-tight premium-gradient-text uppercase">Nath Group</span>
-                  <span className="label-micro mt-1 opacity-60">Minerals & Mining</span>
+                  <span className="label-micro mt-1 opacity-80">Minerals & Mining</span>
                 </div>
               </div>
               <p className="text-ink/60 max-w-sm leading-relaxed font-serif italic text-xl">
@@ -160,14 +160,15 @@ export default function Layout() {
 
             <div>
               <h4 className="label-micro mb-10 opacity-40">Contact HQ</h4>
-              <ul className="space-y-8 text-lg font-serif italic">
+              <ul className="space-y-8 text-lg font-serif italic text-body">
                 <li className="flex flex-col group cursor-pointer">
                   <span className="text-accent text-[10px] uppercase tracking-widest mb-1 font-bold font-mono">Operations</span>
                   <span className="group-hover:text-emerald transition-colors">+91 97144 85318</span>
+                  <span className="group-hover:text-emerald transition-colors">+91 98796 04449</span>
                 </li>
                 <li className="flex flex-col group cursor-pointer">
                   <span className="text-accent text-[10px] uppercase tracking-widest mb-1 font-bold font-mono">General</span>
-                  <span className="group-hover:text-emerald transition-colors">info@nathminerals.com</span>
+                  <span className="group-hover:text-emerald transition-colors">nathenterprise11@gmail.com</span>
                 </li>
               </ul>
             </div>

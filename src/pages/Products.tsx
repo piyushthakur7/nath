@@ -28,7 +28,7 @@ export default function Products() {
               Earth's <br />
               <span className="italic text-accent premium-gradient-text">Treasures.</span>
             </h1>
-            <p className="text-xl md:text-2xl font-serif italic text-ink/50 max-w-xl leading-relaxed">
+            <p className="text-xl md:text-2xl font-serif italic text-body max-w-xl leading-relaxed">
               A meticulously curated collection of rare industrial minerals, processed to laboratory-grade excellence.
             </p>
           </div>
@@ -42,7 +42,7 @@ export default function Products() {
                   "px-6 md:px-8 py-3 rounded-xl md:rounded-full text-[9px] md:text-[11px] uppercase tracking-[0.2em] font-bold transition-all duration-500 flex-grow lg:flex-grow-0",
                   activeCategory === cat 
                     ? "bg-accent text-paper shadow-lg shadow-accent/20" 
-                    : "hover:bg-glass text-ink/40 hover:text-ink"
+                    : "hover:bg-glass text-body/40 hover:text-ink"
                 )}
               >
                 {cat}
@@ -83,7 +83,7 @@ export default function Products() {
                   </div>
                 </div>
                 
-                <p className="text-base md:text-lg text-ink/40 leading-relaxed line-clamp-2 font-serif italic">
+                <p className="text-base md:text-lg text-body leading-relaxed line-clamp-2 font-serif italic">
                   {product.description}
                 </p>
               </motion.div>
@@ -96,19 +96,19 @@ export default function Products() {
       <AnimatePresence>
         {selectedProduct && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-12 overflow-hidden">
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="absolute inset-0 bg-paper/60 backdrop-blur-3xl"
-              onClick={() => setSelectedProduct(null)}
-            />
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="absolute inset-0 bg-paper/80 backdrop-blur-3xl"
+                onClick={() => setSelectedProduct(null)}
+              />
             <motion.div 
               layoutId={selectedProduct.id}
               initial={{ opacity: 0, y: 50, scale: 0.9 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 50, scale: 0.9 }}
-              className="relative w-full max-w-6xl max-h-[90vh] glass-card rounded-[2.5rem] md:rounded-[4rem] overflow-hidden flex flex-col md:flex-row shadow-2xl border-white/10"
+              className="relative w-full max-w-6xl max-h-[90vh] glass-card rounded-[2.5rem] md:rounded-[4rem] overflow-hidden flex flex-col md:flex-row shadow-2xl border-line bg-paper/95"
               onClick={(e) => e.stopPropagation()}
             >
               <button 
@@ -131,9 +131,9 @@ export default function Products() {
               <div className="md:w-[55%] p-8 md:p-20 overflow-y-auto scrollbar-hide">
                 <div className="label-micro mb-4 md:mb-6 text-emerald">{selectedProduct.category}</div>
                 <h2 className="text-4xl md:text-6xl lg:text-7xl mb-8 md:mb-12 font-serif italic premium-gradient-text leading-tight">{selectedProduct.name}</h2>
-                <p className="text-lg md:text-2xl font-serif italic text-ink/60 mb-10 md:mb-16 leading-relaxed">
+                <div className="text-lg md:text-2xl font-serif italic text-body mb-10 md:mb-16 leading-relaxed">
                   {selectedProduct.description}
-                </p>
+                </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-12 mb-10 md:mb-16">
                   <div className="space-y-6 md:space-y-8">
@@ -152,7 +152,7 @@ export default function Products() {
                     <h4 className="label-micro opacity-40 border-b border-line pb-2 md:pb-4">Applications</h4>
                     <div className="flex flex-wrap gap-2 md:gap-4">
                       {selectedProduct.applications.map((app, i) => (
-                        <span key={i} className="px-4 md:px-6 py-2 glass-card rounded-full text-[9px] md:text-[11px] uppercase tracking-[0.2em] font-bold text-ink/80">{app}</span>
+                        <span key={i} className="px-4 md:px-6 py-2 glass-card rounded-full text-[9px] md:text-[11px] uppercase tracking-[0.2em] font-bold text-body bg-ink/5">{app}</span>
                       ))}
                     </div>
                   </div>

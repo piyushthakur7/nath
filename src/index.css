@@ -6,26 +6,27 @@
   --font-serif: "Cormorant Garamond", serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  --color-paper: #050807;
-  --color-ink: #F8FAF9;
-  --color-accent: #EAB308;
-  --color-emerald: #10B981;
-  --color-copper: #D97706;
-  --color-line: rgba(255, 255, 255, 0.06);
-  --color-glass: rgba(255, 255, 255, 0.03);
+  --color-paper: #FFFFFF;
+  --color-ink: #001B35;
+  --color-body: #686868;
+  --color-accent: #0096B1;
+  --color-emerald: #81B754;
+  --color-copper: #3A8FA3;
+  --color-line: rgba(0, 27, 53, 0.08);
+  --color-glass: rgba(255, 255, 255, 0.7);
 }
 
 @layer base {
   body {
-    @apply bg-paper text-ink font-sans antialiased selection:bg-accent selection:text-paper;
+    @apply bg-paper text-body font-sans antialiased selection:bg-accent selection:text-paper;
     background-image: 
-      radial-gradient(at 0% 0%, rgba(16, 185, 129, 0.1) 0px, transparent 50%),
-      radial-gradient(at 100% 100%, rgba(217, 119, 6, 0.1) 0px, transparent 50%);
+      radial-gradient(at 0% 0%, rgba(0, 150, 177, 0.03) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(129, 183, 84, 0.03) 0px, transparent 50%);
     background-attachment: fixed;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-tight font-medium;
+    @apply font-serif tracking-tight font-medium text-ink;
   }
 }
 
@@ -39,7 +40,7 @@
   }
 
   .premium-gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald via-accent to-copper;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent via-copper to-emerald;
   }
 
   .hover-glow {

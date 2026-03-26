@@ -19,7 +19,7 @@ export default function About() {
             </h1>
           </div>
           <div className="lg:col-span-4">
-            <p className="text-xl md:text-2xl font-serif italic text-ink/50 leading-relaxed glass-card p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-emerald/10 shadow-2xl">
+            <p className="text-xl md:text-2xl font-serif italic text-body leading-relaxed glass-card p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-line/40 shadow-2xl bg-glass/60 backdrop-blur-md">
               Since 2008, Nath Group of Minerals has been dedicated to the extraction and processing of high-purity industrial minerals for the world's most demanding sectors.
             </p>
           </div>
@@ -48,20 +48,20 @@ export default function About() {
           <div className="lg:col-span-4">
             <h2 className="text-4xl md:text-5xl font-serif mb-10 md:mb-12 italic premium-gradient-text">Our Philosophy</h2>
             <div className="space-y-8 md:space-y-10">
-              <div className="p-8 md:p-10 glass-card rounded-[2rem] md:rounded-[2.5rem] border-emerald/10 hover:border-accent/40 group cursor-default transition-all duration-500">
+              <div className="p-8 md:p-10 glass-card rounded-[2rem] md:rounded-[2.5rem] border-line/40 hover:border-accent/40 group cursor-default transition-all duration-500 bg-glass/60">
                 <h4 className="label-micro mb-4 md:mb-6 group-hover:text-accent font-bold">01. Precision</h4>
-                <p className="text-base md:text-lg text-ink/50 font-serif italic leading-relaxed">Honest mining practices integrated with high-precision refining standards.</p>
+                <p className="text-base md:text-lg text-body font-serif italic leading-relaxed">Honest mining practices integrated with high-precision refining standards.</p>
               </div>
-              <div className="p-8 md:p-10 glass-card rounded-[2rem] md:rounded-[2.5rem] border-emerald/10 hover:border-accent/40 group cursor-default transition-all duration-500">
+              <div className="p-8 md:p-10 glass-card rounded-[2rem] md:rounded-[2.5rem] border-line/40 hover:border-accent/40 group cursor-default transition-all duration-500 bg-glass/60">
                 <h4 className="label-micro mb-4 md:mb-6 group-hover:text-accent font-bold">02. Evolution</h4>
-                <p className="text-base md:text-lg text-ink/50 font-serif italic leading-relaxed">Constantly disrupting our own processing techniques to achieve absolute purity.</p>
+                <p className="text-base md:text-lg text-body font-serif italic leading-relaxed">Constantly disrupting our own processing techniques to achieve absolute purity.</p>
               </div>
             </div>
           </div>
           <div className="lg:col-span-8">
-            <div className="text-2xl md:text-3xl font-serif italic text-ink/70 leading-relaxed border-l border-line pl-8 md:pl-16 py-4 md:py-8 lg:mt-10">
+            <div className="text-2xl md:text-3xl font-serif italic text-body leading-relaxed border-l border-line pl-8 md:pl-16 py-4 md:py-8 lg:mt-10">
               <p className="mb-10 md:mb-12">
-                Headquartered in the mineral-rich heart of Rajasthan, Barmer, Nath Group of Minerals has evolved from a local extraction unit into a global powerhouse of industrial minerals.
+                Headquartered in the mineral-rich heart of Gujarat, Morbi, Nath Group of Minerals has evolved from a local extraction unit into a global powerhouse of industrial minerals.
               </p>
               <p className="mb-10 md:mb-12">
                 We believe that minerals are the silent backbone of innovation. This responsibility drives us to maintain an uncompromising standard of consistency.
@@ -84,8 +84,8 @@ export default function About() {
               { title: 'Legacy', desc: 'Over 15 years of institutional knowledge driving every grain we process.' },
             ].map((item, i) => (
               <div key={i} className="group">
-                <h3 className="text-3xl md:text-4xl font-serif mb-4 md:mb-6 italic group-hover:text-accent transition-all duration-500">{item.title}</h3>
-                <p className="text-lg md:text-xl text-ink/40 font-serif italic leading-relaxed">{item.desc}</p>
+                <h3 className="text-3xl md:text-4xl font-serif mb-4 md:mb-6 italic group-hover:text-accent transition-all duration-500 text-ink">{item.title}</h3>
+                <p className="text-lg md:text-xl text-body font-serif italic leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>

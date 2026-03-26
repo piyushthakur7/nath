@@ -8,8 +8,20 @@ export default function Home() {
     <div className="relative pt-20 overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] md:min-h-screen flex items-center overflow-hidden">
-        {/* Background Large Text */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.03] md:opacity-[0.05] select-none overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <div className="absolute inset-0 bg-paper/60 backdrop-blur-[2px] z-10" />
+          <iframe 
+            className="w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none scale-110"
+            src="https://www.youtube.com/embed/XY_0pFMS3Ro?autoplay=1&mute=1&loop=1&playlist=XY_0pFMS3Ro&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0" 
+            title="Hero Background Video"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+          />
+        </div>
+
+        {/* Background Large Text (Reduced opacity further) */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.02] md:opacity-[0.03] select-none overflow-hidden">
           <motion.h1 
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1.2, opacity: 0.05 }}
@@ -39,7 +51,7 @@ export default function Home() {
                 <div className="absolute -top-6 md:-top-12 -left-6 md:-left-12 w-32 md:w-48 h-32 md:h-48 bg-emerald/10 blur-[60px] md:blur-[80px] -z-10" />
               </h1>
               <div className="flex flex-col md:flex-row md:items-end gap-10 md:gap-16">
-                <p className="text-xl md:text-2xl font-serif italic text-ink/70 max-w-lg leading-relaxed border-l-2 border-accent pl-6 md:pl-10 py-4 bg-glass/20 backdrop-blur-sm rounded-r-3xl">
+                <p className="text-xl md:text-2xl font-serif italic text-body max-w-lg leading-relaxed border-l-2 border-accent pl-6 md:pl-10 py-4 bg-glass/60 backdrop-blur-md rounded-r-3xl">
                   Nath Group: Bridging nature's raw power with high-end industrial engineering.
                 </p>
                 <Link 
@@ -135,7 +147,7 @@ export default function Home() {
                 & Precision Supply.
               </h2>
             </div>
-            <p className="text-lg md:text-xl text-ink/50 font-serif italic max-w-sm border-l border-line pl-8">
+            <p className="text-lg md:text-xl text-body font-serif italic max-w-sm border-l border-line pl-8">
               A glimpse into the massive scale of our extraction units and refined mineral processing.
             </p>
           </div>
@@ -196,8 +208,8 @@ export default function Home() {
               </div>
               <div className="absolute -bottom-8 md:-bottom-16 -right-8 md:-right-16 w-64 md:w-80 h-64 md:h-80 glass-card rounded-[2.5rem] md:rounded-[3.5rem] p-8 md:p-12 hidden md:block z-20 shadow-2xl border-emerald/20">
                 <ShieldCheck size={56} className="text-emerald mb-6 md:mb-8" />
-                <h4 className="text-xl md:text-2xl font-serif mb-3 italic">Certified Purity</h4>
-                <p className="text-xs md:text-sm text-ink/50 leading-relaxed">ISO 9001:2015 certified processes ensuring consistent world-class quality.</p>
+                <h4 className="text-xl md:text-2xl font-serif mb-3 italic text-ink">Certified Purity</h4>
+                <p className="text-xs md:text-sm text-body leading-relaxed">ISO 9001:2015 certified processes ensuring consistent world-class quality.</p>
               </div>
             </div>
             
@@ -226,8 +238,8 @@ export default function Home() {
                       {item.icon}
                     </div>
                     <div>
-                      <h3 className="text-xl md:text-2xl font-serif mb-2 md:mb-4 italic group-hover:text-accent transition-colors">{item.title}</h3>
-                      <p className="text-base md:text-lg text-ink/50 leading-relaxed max-w-md">{item.desc}</p>
+                      <h3 className="text-xl md:text-2xl font-serif mb-2 md:mb-4 italic group-hover:text-accent transition-colors text-ink">{item.title}</h3>
+                      <p className="text-base md:text-lg text-body leading-relaxed max-w-md">{item.desc}</p>
                     </div>
                   </div>
                 ))}

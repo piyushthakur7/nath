@@ -76,12 +76,13 @@ export default function Home() {
               transition={{ duration: 2, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
               className="lg:col-span-4 relative group hidden lg:block"
             >
-              <div className="aspect-[3/4] overflow-hidden rounded-[3rem] border border-line p-5 bg-glass relative z-10 hover-glow">
-                <img 
-                  src="https://picsum.photos/seed/mineral-raw-luxe/1000/1250" 
-                  alt="Raw Mineral" 
-                  className="w-full h-full object-cover rounded-[2rem] brightness-[1.1] transition-all duration-1000 group-hover:scale-110"
-                  referrerPolicy="no-referrer"
+              <div className="aspect-[3/4] overflow-hidden rounded-[3rem] border border-line p-2 bg-glass relative z-10 hover-glow">
+                <iframe 
+                  className="w-full h-full rounded-[2rem] object-cover scale-105"
+                  src="https://www.youtube.com/embed/D-brFC05uRQ?autoplay=1&mute=1&loop=1&playlist=D-brFC05uRQ&controls=0&modestbranding=1" 
+                  title="Raw Mineral Video"
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
                 />
               </div>
               <div className="absolute -top-10 -right-10 w-40 h-40 border border-emerald/20 rounded-full animate-pulse" />

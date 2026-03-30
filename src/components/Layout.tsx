@@ -26,10 +26,10 @@ export default function Layout() {
   return (
     <div className="min-h-screen bg-paper text-ink font-sans selection:bg-accent selection:text-paper flex flex-col relative overflow-x-hidden">
       {/* Mesh Background */}
-      <div className="mesh-bg">
-        <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-emerald/20 rounded-full mix-blend-screen" />
-        <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-copper/20 rounded-full mix-blend-screen" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/3 h-1/3 bg-accent/10 rounded-full mix-blend-screen" />
+      <div className="mesh-bg opacity-30">
+        <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-accent/20 rounded-full mix-blend-plus-lighter" />
+        <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-copper/20 rounded-full mix-blend-plus-lighter" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/3 h-1/3 bg-accent/10 rounded-full mix-blend-plus-lighter" />
       </div>
 
       {/* Navigation */}
@@ -37,8 +37,8 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto">
           <div className="glass-card rounded-3xl h-24 flex justify-between items-center px-8 shadow-2xl">
             <Link to="/" className="flex items-center gap-4 group">
-              <div className="h-14 w-14 bg-ink/5 p-1 rounded-xl shadow-inner group-hover:bg-ink/10 transition-colors duration-500 overflow-hidden border border-ink/5">
-                <img src={logo} alt="Nath Group Logo" className="h-full w-full object-contain brightness-[1.0] scale-[1.15] group-hover:scale-125 transition-all duration-700" />
+              <div className="h-14 w-14 bg-paper/20 p-2 rounded-xl shadow-inner group-hover:bg-paper/30 transition-colors duration-500 overflow-hidden border border-line">
+                <img src={logo} alt="Nath Group Logo" className="h-full w-full object-contain brightness-[1.2] scale-[1.15] group-hover:scale-125 transition-all duration-700" />
               </div>
               <div className="flex flex-col">
                 <span className="text-2xl font-serif font-medium tracking-tight leading-none premium-gradient-text uppercase">Nath Group</span>
@@ -135,8 +135,8 @@ export default function Layout() {
           <div className="grid md:grid-cols-4 gap-24 mb-32">
             <div className="col-span-2">
               <div className="flex items-center gap-5 mb-10">
-                <div className="h-16 w-16 bg-ink/5 p-1 rounded-2xl shadow-inner overflow-hidden border border-ink/5">
-                  <img src={logo} alt="Nath Group Logo" className="h-full w-full object-contain brightness-[1.0]" />
+                <div className="h-16 w-16 bg-paper/20 p-2 rounded-2xl shadow-inner overflow-hidden border border-line">
+                  <img src={logo} alt="Nath Group Logo" className="h-full w-full object-contain brightness-[1.2]" />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-3xl font-serif font-medium tracking-tight premium-gradient-text uppercase">Nath Group</span>

@@ -10,7 +10,7 @@ export default function Home() {
       <section className="relative min-h-[90vh] md:min-h-screen flex items-center overflow-hidden">
         {/* Video Background */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute inset-0 bg-paper/60 backdrop-blur-[2px] z-10" />
+          <div className="absolute inset-0 bg-paper/40 backdrop-blur-[1px] z-10" />
           <iframe 
             className="w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none scale-110"
             src="https://www.youtube.com/embed/XY_0pFMS3Ro?autoplay=1&mute=1&loop=1&playlist=XY_0pFMS3Ro&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0" 
@@ -33,69 +33,42 @@ export default function Home() {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 py-20">
-          <div className="grid lg:grid-cols-12 gap-12 md:gap-24 items-center">
+          <div className="flex flex-col items-center text-center">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-              className="lg:col-span-8 text-left"
+              className="max-w-4xl"
             >
-              <div className="label-micro mb-8 md:mb-10 flex items-center gap-4 md:gap-5">
-                <span className="w-8 md:w-12 h-[2px] bg-gradient-to-r from-emerald to-accent"></span>
-                <span className="premium-gradient-text text-[9px] md:text-[11px]">Since 2008 • Global Mineral Excellence</span>
+              <div className="label-micro mb-12 flex items-center justify-center gap-6">
+                <span className="w-16 h-[2px] bg-gradient-to-r from-emerald to-accent"></span>
+                <span className="premium-gradient-text">Since 2008 • Global Mineral Excellence</span>
+                <span className="w-16 h-[2px] bg-gradient-to-l from-emerald to-accent"></span>
               </div>
-              <h1 className="text-6xl md:text-8xl lg:text-[14rem] font-serif leading-[0.85] md:leading-[0.75] tracking-tighter mb-10 md:mb-16 relative">
+              <h1 className="text-7xl md:text-[10rem] lg:text-[16rem] font-serif leading-[0.8] tracking-tighter mb-20 relative">
                 Premium <br />
-                <span className="italic text-accent drop-shadow-[0_0_30px_rgba(234,179,8,0.3)]">Minerals</span> <br />
+                <span className="italic text-accent drop-shadow-[0_0_50px_rgba(194,65,12,0.3)]">Minerals</span> <br />
                 Refined.
-                <div className="absolute -top-6 md:-top-12 -left-6 md:-left-12 w-32 md:w-48 h-32 md:h-48 bg-emerald/10 blur-[60px] md:blur-[80px] -z-10" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-accent/5 blur-[120px] -z-10" />
               </h1>
-              <div className="flex flex-col md:flex-row md:items-end gap-10 md:gap-16">
-                <p className="text-xl md:text-2xl font-serif italic text-body max-w-lg leading-relaxed border-l-2 border-accent pl-6 md:pl-10 py-4 bg-glass/60 backdrop-blur-md rounded-r-3xl">
+              <div className="flex flex-col items-center gap-16">
+                <p className="text-2xl md:text-3xl font-serif italic text-body max-w-2xl leading-relaxed border-y border-line py-10">
                   Nath Group: Bridging nature's raw power with high-end industrial engineering.
                 </p>
                 <Link 
                   to="/products"
-                  className="group flex items-center gap-4 md:gap-6 text-sm font-bold uppercase tracking-[0.3em] shrink-0 self-start md:self-auto"
+                  className="group flex flex-col items-center gap-6 text-sm font-bold uppercase tracking-[0.4em]"
                 >
-                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-line flex items-center justify-center group-hover:bg-accent group-hover:text-paper group-hover:border-accent group-hover:scale-110 transition-all duration-700 shadow-2xl overflow-hidden relative">
+                  <div className="w-32 h-32 rounded-full border-2 border-line flex items-center justify-center group-hover:bg-accent group-hover:text-paper group-hover:border-accent group-hover:scale-110 transition-all duration-700 shadow-2xl relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-emerald to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                    <ChevronRight size={32} className="md:size-40 relative z-10" />
+                    <ChevronRight size={48} className="relative z-10" />
                   </div>
-                  <div className="flex flex-col">
-                    <span className="text-[10px] opacity-40 mb-1 font-mono">Curated</span>
-                    <span className="premium-gradient-text">Catalog</span>
+                  <div className="flex flex-col items-center">
+                    <span className="text-[10px] opacity-40 mb-2 font-mono">Explore Our</span>
+                    <span className="premium-gradient-text text-xl">Curated Catalog</span>
                   </div>
                 </Link>
               </div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 2, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="lg:col-span-4 relative group hidden lg:block"
-            >
-              <div className="aspect-[3/4] overflow-hidden rounded-[3rem] border border-line p-2 bg-glass relative z-10 hover-glow">
-                <iframe 
-                  className="w-full h-full rounded-[2rem] object-cover scale-105"
-                  src="https://www.youtube.com/embed/D-brFC05uRQ?autoplay=1&mute=1&loop=1&playlist=D-brFC05uRQ&controls=0&modestbranding=1" 
-                  title="Raw Mineral Video"
-                  frameBorder="0"
-                  allow="autoplay; encrypted-media"
-                />
-              </div>
-              <div className="absolute -top-10 -right-10 w-40 h-40 border border-emerald/20 rounded-full animate-pulse" />
-              <div className="absolute -bottom-10 -left-10 w-60 h-60 border border-accent/20 rounded-full animate-[spin_10s_linear_infinite]" />
-              
-              <motion.div 
-                animate={{ y: [0, -30, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-16 -left-16 glass-card p-10 rounded-[2rem] hidden xl:block z-20 shadow-2xl"
-              >
-                <div className="label-micro text-accent mb-3">Global Export</div>
-                <div className="text-4xl font-serif italic premium-gradient-text">25+ Nations</div>
-              </motion.div>
             </motion.div>
           </div>
         </div>
@@ -138,7 +111,7 @@ export default function Home() {
       </section>
 
       {/* Enterprise Gallery Section */}
-      <section className="py-24 md:py-48 relative overflow-hidden bg-glass/10">
+      <section className="py-24 md:py-48 relative overflow-hidden bg-white/2">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-12">
             <div className="max-w-2xl">

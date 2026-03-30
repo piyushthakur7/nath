@@ -59,8 +59,8 @@ export default function Gallery() {
   return (
     <div className="pt-32 pb-48 relative overflow-hidden">
       {/* Background large text */}
-      <div className="absolute inset-0 flex items-start justify-center pointer-events-none opacity-[0.01] select-none pt-20 overflow-hidden">
-        <h1 className="text-[40vw] font-serif whitespace-nowrap premium-gradient-text">VISUALS</h1>
+      <div className="absolute inset-0 flex items-start justify-center pointer-events-none opacity-[0.03] select-none pt-20 overflow-hidden">
+        <h1 className="text-[40vw] font-serif whitespace-nowrap premium-gradient-text opacity-10">VISUALS</h1>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">

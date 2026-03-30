@@ -138,7 +138,7 @@ export default function Gallery() {
                       <img 
                         src={(item as any).src} 
                         alt={item.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000 grayscale group-hover:grayscale-0"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000"
                       />
                     )}
                   </div>

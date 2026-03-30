@@ -7,84 +7,67 @@ export default function Home() {
   return (
     <div className="relative pt-20 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] md:min-h-screen flex items-center overflow-hidden">
-        {/* Video Background */}
+      <section className="relative min-h-[95vh] flex items-center overflow-hidden">
+        {/* Full-width Macro Operational Background */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute inset-0 bg-paper/40 backdrop-blur-[1px] z-10" />
           <iframe 
-            className="w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none scale-110"
-            src="https://www.youtube.com/embed/XY_0pFMS3Ro?autoplay=1&mute=1&loop=1&playlist=XY_0pFMS3Ro&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0" 
-            title="Hero Background Video"
+            className="w-[100vw] h-[177.77vw] min-h-[100vh] min-w-[56.25vh] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none scale-[3.5] z-0"
+            src="https://www.youtube.com/embed/D-brFC05uRQ?autoplay=1&mute=1&loop=1&playlist=D-brFC05uRQ&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0&enablejsapi=1" 
+            title="Macro Operational Background"
             frameBorder="0"
             allow="autoplay; encrypted-media"
           />
+          {/* Subtle Dark Overlay for contrast */}
+          <div className="absolute inset-0 bg-paper/40 backdrop-blur-[1px] z-10" />
         </div>
 
-        {/* Background Large Text (Reduced opacity further) */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.02] md:opacity-[0.03] select-none overflow-hidden">
-          <motion.h1 
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1.2, opacity: 0.05 }}
-            transition={{ duration: 3, ease: "easeOut" }}
-            className="text-[60vw] md:text-[40vw] font-serif whitespace-nowrap leading-none premium-gradient-text"
-          >
-            NATH NATH NATH
-          </motion.h1>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 py-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 py-32">
           <div className="flex flex-col items-center text-center">
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-              className="max-w-4xl"
+              initial={{ opacity: 0, y: 30 }}
+              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+              whileInView={{ opacity: 1, y: 0 }}
+              className="max-w-5xl"
             >
-              <div className="label-micro mb-12 flex items-center justify-center gap-6">
-                <span className="w-16 h-[2px] bg-gradient-to-r from-emerald to-accent"></span>
-                <span className="premium-gradient-text">Since 2008 • Global Mineral Excellence</span>
-                <span className="w-16 h-[2px] bg-gradient-to-l from-emerald to-accent"></span>
+              <div className="label-micro mb-10 flex items-center justify-center gap-6">
+                <span className="w-12 h-[1px] bg-accent/30"></span>
+                <span className="premium-gradient-text tracking-[0.5em]">Global Mineral Excellence</span>
+                <span className="w-12 h-[1px] bg-accent/30"></span>
               </div>
-              <h1 className="text-7xl md:text-[10rem] lg:text-[16rem] font-serif leading-[0.8] tracking-tighter mb-20 relative">
-                Premium <br />
-                <span className="italic text-accent drop-shadow-[0_0_50px_rgba(194,65,12,0.3)]">Minerals</span> <br />
+              <h1 className="text-5xl md:text-7xl lg:text-[10rem] font-serif leading-[0.9] tracking-tighter mb-16 relative">
+                Premium <span className="italic text-accent block md:inline">Minerals</span> <br />
                 Refined.
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-accent/5 blur-[120px] -z-10" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-accent/20 blur-[150px] -z-10 opacity-50" />
               </h1>
-              <div className="flex flex-col items-center gap-16">
-                <p className="text-2xl md:text-3xl font-serif italic text-body max-w-2xl leading-relaxed border-y border-line py-10">
-                  Nath Group: Bridging nature's raw power with high-end industrial engineering.
+              <div className="flex flex-col items-center gap-12">
+                <p className="text-xl md:text-2xl font-serif italic text-ink/70 max-w-2xl leading-relaxed">
+                  "Nath Group: Bridging nature's raw power with <br className="hidden md:block"/> high-end industrial engineering."
                 </p>
                 <Link 
                   to="/products"
-                  className="group flex flex-col items-center gap-6 text-sm font-bold uppercase tracking-[0.4em]"
+                  className="group relative"
                 >
-                  <div className="w-32 h-32 rounded-full border-2 border-line flex items-center justify-center group-hover:bg-accent group-hover:text-paper group-hover:border-accent group-hover:scale-110 transition-all duration-700 shadow-2xl relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-emerald to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                    <ChevronRight size={48} className="relative z-10" />
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <span className="text-[10px] opacity-40 mb-2 font-mono">Explore Our</span>
-                    <span className="premium-gradient-text text-xl">Curated Catalog</span>
+                  <div className="px-12 py-5 rounded-full border border-accent/30 bg-accent/5 hover:bg-accent text-accent hover:text-paper transition-all duration-700 backdrop-blur-xl text-xs font-bold uppercase tracking-[0.4em] shadow-2xl">
+                    Explore Our Catalog
                   </div>
                 </Link>
               </div>
             </motion.div>
           </div>
         </div>
-        
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-10 md:bottom-16 right-10 md:right-16 flex flex-col items-center gap-6 translate-x-1/2 hidden md:flex">
-          <div className="label-micro opacity-40 rotate-90 origin-center translate-y-12">Explore</div>
-          <div className="w-[2px] h-32 bg-line/20 relative overflow-hidden rounded-full">
-            <motion.div 
-              animate={{ y: [-128, 128] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-emerald to-accent"
-            />
-          </div>
-        </div>
       </section>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-10 md:bottom-16 right-10 md:right-16 flex flex-col items-center gap-6 translate-x-1/2 hidden md:flex">
+        <div className="label-micro opacity-40 rotate-90 origin-center translate-y-12">Explore</div>
+        <div className="w-[2px] h-32 bg-line/20 relative overflow-hidden rounded-full">
+          <motion.div 
+            animate={{ y: [-128, 128] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-emerald to-accent"
+          />
+        </div>
+      </div>
 
       {/* Stats Section with Glass Cards */}
       <section className="py-20 md:py-32 relative">
@@ -131,7 +114,7 @@ export default function Home() {
               <img 
                 src="/images/enterprise/op-3.jpg" 
                 alt="Main Extraction Site" 
-                className="w-full h-full object-cover rounded-[2rem] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
+                className="w-full h-full object-cover rounded-[2rem] group-hover:scale-105 transition-all duration-1000"
               />
               <div className="absolute top-12 left-12 glass-card p-4 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-500">
                 <span className="text-xs font-mono">Aerial View • Site 03</span>
@@ -141,21 +124,21 @@ export default function Home() {
               <img 
                 src="/images/enterprise/min-1.jpg" 
                 alt="Mineral Processing" 
-                className="w-full h-full object-cover rounded-[2rem] grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
+                className="w-full h-full object-cover rounded-[2rem] group-hover:scale-110 transition-all duration-1000"
               />
             </div>
             <div className="aspect-[4/5] overflow-hidden rounded-[3rem] border border-line p-4 md:p-6 bg-glass group">
               <img 
                 src="/images/enterprise/op-1.jpg" 
                 alt="Mining Operations" 
-                className="w-full h-full object-cover rounded-[2rem] grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
+                className="w-full h-full object-cover rounded-[2rem] group-hover:scale-110 transition-all duration-1000"
               />
             </div>
             <div className="md:col-span-2 aspect-[21/9] overflow-hidden rounded-[3rem] border border-line p-4 md:p-6 bg-glass group">
               <img 
                 src="/images/enterprise/op-2.jpg" 
                 alt="Logistics Fleet" 
-                className="w-full h-full object-cover rounded-[2rem] grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
+                className="w-full h-full object-cover rounded-[2rem] group-hover:scale-105 transition-all duration-1000"
               />
               <div className="absolute bottom-12 right-12 glass-card p-4 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-500">
                 <span className="text-xs font-mono tracking-widest">Global Logistics • Ready for Dispatch</span>

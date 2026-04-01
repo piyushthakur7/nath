@@ -41,7 +41,7 @@ export default function Home() {
               </h1>
               <div className="flex flex-col items-center gap-12">
                 <p className="text-xl md:text-2xl font-serif italic text-ink/70 max-w-2xl leading-relaxed">
-                  "Nath Group: Bridging nature's raw power with <br className="hidden md:block"/> high-end industrial engineering."
+                  "Nath Enterprises: Bridging nature's raw power with <br className="hidden md:block"/> high-end industrial engineering."
                 </p>
                 <Link 
                   to="/products"
@@ -98,7 +98,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-12">
             <div className="max-w-2xl">
-              <div className="label-micro mb-8">Nath Enterprise</div>
+              <h3 className="text-3xl md:text-5xl font-serif italic mb-8 premium-gradient-text tracking-wide">Nath Enterprises</h3>
               <h2 className="text-5xl md:text-7xl font-serif leading-tight">
                 Our <span className="italic text-accent">Operations</span> <br />
                 & Precision Supply.

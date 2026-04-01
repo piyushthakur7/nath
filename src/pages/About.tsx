@@ -20,7 +20,7 @@ export default function About() {
           </div>
           <div className="lg:col-span-4">
             <p className="text-xl md:text-2xl font-serif italic text-body leading-relaxed glass-card p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-line/40 shadow-2xl bg-glass/60 backdrop-blur-md">
-              Since 2008, Nath Group of Minerals has been dedicated to the extraction and processing of high-purity industrial minerals for the world's most demanding sectors.
+              Since 2008, Nath Enterprises has been dedicated to the extraction and processing of high-purity industrial minerals for the world's most demanding sectors.
             </p>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function About() {
           <div className="lg:col-span-8">
             <div className="text-2xl md:text-3xl font-serif italic text-body leading-relaxed border-l border-line pl-8 md:pl-16 py-4 md:py-8 lg:mt-10">
               <p className="mb-10 md:mb-12">
-                Headquartered in the mineral-rich heart of Gujarat, Morbi, Nath Group of Minerals has evolved from a local extraction unit into a global powerhouse of industrial minerals.
+                Headquartered in the mineral-rich heart of Gujarat, Morbi, Nath Enterprises has evolved from a local extraction unit into a global powerhouse of industrial minerals.
               </p>
               <p className="mb-10 md:mb-12">
                 We believe that minerals are the silent backbone of innovation. This responsibility drives us to maintain an uncompromising standard of consistency.

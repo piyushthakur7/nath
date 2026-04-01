@@ -38,10 +38,10 @@ export default function Layout() {
           <div className="glass-card rounded-3xl h-24 flex justify-between items-center px-8 shadow-2xl">
             <Link to="/" className="flex items-center gap-4 group">
               <div className="h-14 w-14 bg-paper/20 p-2 rounded-xl shadow-inner group-hover:bg-paper/30 transition-colors duration-500 overflow-hidden border border-line">
-                <img src={logo} alt="Nath Group Logo" className="h-full w-full object-contain brightness-[1.2] scale-[1.15] group-hover:scale-125 transition-all duration-700" />
+                <img src={logo} alt="Nath Enterprises Logo" className="h-full w-full object-contain brightness-[1.2] scale-[1.15] group-hover:scale-125 transition-all duration-700" />
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-serif font-medium tracking-tight leading-none premium-gradient-text uppercase">Nath Group</span>
+                <span className="text-2xl font-serif font-medium tracking-tight leading-none premium-gradient-text uppercase">Nath Enterprises</span>
                 <span className="label-micro mt-1 opacity-80">Minerals & Mining</span>
               </div>
             </Link>
@@ -136,10 +136,10 @@ export default function Layout() {
             <div className="col-span-2">
               <div className="flex items-center gap-5 mb-10">
                 <div className="h-16 w-16 bg-paper/20 p-2 rounded-2xl shadow-inner overflow-hidden border border-line">
-                  <img src={logo} alt="Nath Group Logo" className="h-full w-full object-contain brightness-[1.2]" />
+                  <img src={logo} alt="Nath Enterprises Logo" className="h-full w-full object-contain brightness-[1.2]" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-3xl font-serif font-medium tracking-tight premium-gradient-text uppercase">Nath Group</span>
+                  <span className="text-3xl font-serif font-medium tracking-tight premium-gradient-text uppercase">Nath Enterprises</span>
                   <span className="label-micro mt-1 opacity-80">Minerals & Mining</span>
                 </div>
               </div>
@@ -177,7 +177,7 @@ export default function Layout() {
 
           <div className="flex flex-col md:flex-row justify-between items-center pt-16 border-t border-line gap-12">
             <div className="text-[10px] uppercase tracking-[0.3em] text-ink/30 font-bold font-mono">
-              © {new Date().getFullYear()} Nath Group of Minerals. All rights reserved.
+              © {new Date().getFullYear()} Nath Enterprises. All rights reserved.
             </div>
             
             <div className="flex gap-16">

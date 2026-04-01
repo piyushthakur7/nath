@@ -27,7 +27,7 @@ export default function Contact() {
                   <h3 className="text-2xl md:text-3xl font-serif italic">Headquarters</h3>
                 </div>
                 <p className="text-lg md:text-xl text-body leading-relaxed font-serif italic">
-                  Nath Group of Minerals,<br />
+                  Nath Enterprises,<br />
                   Square Meter - 1347, Plot No. 1 and 2,<br />
                   Survey NO 547 Paiki, Pipali Jetpar Road,<br />
                   Village - Bela, Morbi, Gujarat - 363330

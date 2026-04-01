@@ -88,11 +88,11 @@ export const PRODUCTS: Product[] = [
     applications: ["Sanitaryware", "Wall & Floor Tiles", "Electrical Porcelain", "Refractories"]
   },
   {
-    id: "mix-82-sr",
-    name: "MIX-82 Silica-Rich",
-    description: "Specialized high-silica blend (63.42%) with moderate alumina. Ideal for glazes and specific ceramic formulations requiring high silica-alumina ratios.",
-    image: "/sbq_clay_real.png",
-    category: "Minerals",
+    id: "sb-1-clay",
+    name: "SB-1 Clay",
+    description: "Premium industrial grade clay with exceptional plasticity and firing stability. Engineered for high-performance ceramic bodies and industrial applications.",
+    image: "/sb1_clay_mineral_1773999756254.png",
+    category: "Clay",
     specs: [
       { label: "Silica (SiO2)", value: "63.42%" },
       { label: "Alumina (Al2O3)", value: "24.08%" },

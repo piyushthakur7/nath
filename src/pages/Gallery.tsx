@@ -15,7 +15,6 @@ const VIDEOS = [
 ];
 
 const IMAGES = [
-  { src: '/images/enterprise/op-1.jpg', title: 'Main Extraction Arena', category: 'Facilities' },
   { src: '/images/enterprise/op-2.jpg', title: 'Logistics Fleet', category: 'Operations' },
   { src: '/images/enterprise/op-3.jpg', title: 'Aerial Site Overview', category: 'Facilities' },
   { src: '/images/enterprise/min-1.jpg', title: 'Refining Unit 01', category: 'Processing' },

@@ -29,8 +29,8 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 mb-24 md:mb-48">
           <div className="aspect-[16/9] overflow-hidden rounded-[2.5rem] md:rounded-[3.5rem] border border-line bg-glass p-3 md:p-5 hover-glow group transition-all duration-700">
             <img 
-              src="/images/enterprise/op-4.jpg" 
-              alt="Mining Site" 
+              src="/images/enterprise/op-3.jpg" 
+              alt="Aerial Site Overview" 
               className="w-full h-full object-cover rounded-[1.5rem] md:rounded-[2.5rem] group-hover:scale-105 transition-all duration-1000"
             />
           </div>

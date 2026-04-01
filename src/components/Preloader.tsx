@@ -37,7 +37,7 @@ export default function Preloader() {
               className="mb-12 overflow-hidden"
             >
               <h1 className="text-4xl md:text-6xl font-serif tracking-tighter italic">
-                Nath <span className="text-accent">Enterprises</span>
+                Nath <span className="text-accent">Enterprise</span>
               </h1>
             </motion.div>
 

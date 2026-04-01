@@ -70,7 +70,7 @@ export default function Gallery() {
             animate={{ opacity: 1, y: 0 }}
             className="label-micro mb-8 inline-block"
           >
-            Nath Enterprises Media
+            Nath Enterprise Media
           </motion.div>
           <motion.h1 
             initial={{ opacity: 0, scale: 0.9 }}
